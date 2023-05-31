@@ -10,7 +10,7 @@ $(document).ready(function () {
         accessibility: true,
         adaptiveHeight: false,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 3000,
