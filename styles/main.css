@@ -1,0 +1,430 @@
+@font-face {
+    font-family: "Montserrat_300";
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat_400";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat_300", sans-serif;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000000;
+}
+
+/*<------------------------------------------------------>*/
+/*Обнуляющие стили*/
+
+/* Reset and base styles  */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+
+/*<------------------------------------------------------>*/
+/*Стили слайдера*/
+
+.slide {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 829px;
+    width: 100%;
+}
+
+.slide.slick-slide {
+    min-height: calc(100vh - 40px);
+}
+
+.slider-controls-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 295px;
+    flex-wrap: wrap;
+    z-index: 999;
+    margin-right: 80px;
+    margin-bottom: 75px;
+}
+
+.slick-dots {
+    /*z-index: 999;*/
+    display: block;
+    justify-content: end;
+    bottom: 0;
+    position: static;
+    font-size: 0;
+    line-height: 0;
+}
+
+.slider-controls {
+    /*z-index: 999;*/
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    margin-bottom: 2px;
+}
+
+.slider-controls a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slick-dots li {
+    display: inline-block;
+    transition: all .2s ease;
+    width: 139px;
+    height: 4px;
+    margin: 0;
+    background-color: #000000;
+}
+
+.slick-dots .slick-active {
+    background-color: #FFFFFF;
+    width: 156px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
+/*<------------------------------------------------------>*/
+/*Стили для контента первого блока*/
+
+.first-block-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    margin-bottom: 225px;
+}
+
+.header-container {
+    max-width: 1730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 0 0;
+}
+
+.non-block {
+    width: 228px;
+}
+
+.nav-menu {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a.nav-item {
+    color: #000000;
+}
+
+a.nav-item:hover {
+    border-bottom: 1px solid #000000;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.action-menu {
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+a svg {
+    fill: #000000 !important;
+}
+
+a svg:hover {
+    fill: rgba(0, 0, 0, 0.55) !important;
+}
+
+
+.intro-text {
+    font-size: 24px;
+    /*line-height: 29px;*/
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.intro-title {
+    font-size: 96px;
+    line-height: 117px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 58px;
+}
+
+.intro-watch-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-watch-btn p {
+    margin-right: 13px;
+}
+
+
+/*<------------------------------------------------------>*/
+/*Стили для второго блока*/
+
+.second-block {
+    padding-top: 31px;
+    position: relative;
+}
+
+.second-block-wrapper {
+    display: flex;
+    justify-content: center;
+    /*font-size: 0;*/
+}
+
+.second-block-title {
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.second-block-decoration {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: start;
+}
+
+.second-block-decoration img:nth-child(1) {
+    bottom: 0;
+}
+
+/*<------------------------------------------------------>*/
+/*Стили для третьего блока*/
+
+.third-block {
+    padding: 84px 0;
+    position: relative;
+
+}
+
+.third-block-title {
+    font-size: 24px;
+    line-height: 132%;
+    text-align: center;
+    margin: 0 auto 70px auto;
+    width: 272px;
+}
+
+.cards {
+    margin-left: 212px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 415px;
+    position: relative;
+}
+
+.card-body {
+    position: relative;
+    padding-top: 14px;
+}
+
+.card-title {
+    margin-bottom: 7px;
+}
+
+.card-price {
+    text-transform: none;
+}
+
+.card img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.new {
+    position: absolute;
+    font-family: Montserrat_400, sans-serif;
+    width: 81px;
+    background: #80BDEE;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: center;
+    text-align: center;
+    padding: 5px 13px;
+    top: 0;
+    right: 0;
+}
+
+.card-heart {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+}
+
+.card-heart svg {
+}
+
+.old-price-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card .old-price {
+    text-decoration-line: line-through;
+    color: #AAC4E1;
+    margin-right: 6px;
+}
+
+.colors {
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 27px;
+}
+
+.colors svg:first-child {
+    fill: #C4C4C4;
+}
+
+.colors a:nth-child(2) {
+    fill: #E1CDA6;
+}
+
+.third-block-wrapper {
+    position: relative;
+}
+
+.go-to-directory {
+    transform: rotate(270deg);
+    position: absolute;
+    /*bottom: 21em;*/
+    /*left: 6em;*/
+    bottom: 23.4%;
+    left: 2.3%;
+}
+
+.go-to-directory:visited {
+    color: #000000;
+}
+
+.go-to-directory p {
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.additional-panel {
+    display: none;
+    padding: 15px 72px;
+}
+
+.additional-panel-sizes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.add-basket {
+    display: flex;
+    width: 114px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
